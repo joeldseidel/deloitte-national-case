@@ -28,10 +28,10 @@
 						<tr>
 							<td>
 								<select class="form-control" name="ind_id">
-									<option value="0">Local Deliveries</option>
-									<option value="1">Professional Drivers / Trucking</option>
-									<option value="2">Ride Hailing</option>
-									<option value="3">Rescue / Emergency Services</option>
+									<option value="Local Deliveries">Local Deliveries</option>
+									<option value="Professional Drivers / Trucking">Professional Drivers / Trucking</option>
+									<option value="Ride Hailing">Ride Hailing</option>
+									<option value="Rescue / Emergency Services">Rescue / Emergency Services</option>
 								</select>
 							</td>
 							<td>
@@ -63,6 +63,11 @@
 				</table>
 				<button type="submit" class="btn btn-primary">Create</button>
 			</form>
+		</div>
+	</div>
+	<div class="row w-100 m-0 p-0">
+		<div class="col-lg-6 p-0 m-0">
+			<?php require './php/calc_heuristics.php' ?>
 		</div>
 	</div>
 </body>
