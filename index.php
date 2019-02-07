@@ -9,7 +9,7 @@
 	<div class="row w-100 m-0 p-0">
 		<div class="col-lg-12 p-0 m-0">
 		<h1 class="w-100">Create Market Heursitic Set</h1>
-			<form action="/php/create_market.php" method="get">
+			<form action="./php/create_market.php" method="get">
 				<table class="table">
 					<thead>
 						<tr>	
