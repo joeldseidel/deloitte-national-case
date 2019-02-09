@@ -66,7 +66,7 @@
 		</div>
 	</div>
 	<div class="row w-100 m-0 p-0">
-		<div class="col-lg-6 p-0 m-0">
+		<div class="col-lg-12 p-0 m-0">
 			<?php require './php/calc_heuristics.php' ?>
 		</div>
 	</div>

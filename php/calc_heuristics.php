@@ -17,6 +17,7 @@ $partner_fit = array();
 
 foreach($market_heuristics as $market){
 	$market_name = $market->Ind_Id;
+	$market_total = 0;
 	echo "<h2>$market_name</h2>";
 	echo "<table class='table'><thead><tr><th>Partner Name</th><th>Fit Index</th><th>Market Entry Index</th><th>Composite Strategy Score</th></tr></thead>";
 	$optimal_score = $market->Compact + $market->Standard + $market->Trucks + $market->Luxury + $market->Safety + $market->Cost + $market->Ready + $market->Linked;
@@ -40,9 +41,12 @@ foreach($market_heuristics as $market){
 		$fcomposite_score = number_format($composite_score, 2);
 		$fmarket_entry = number_format($market_entry * 100, 2);
 		echo "<tr><td>$name</td><td>$ffit_index</td><td>$fmarket_entry</td><td>$fcomposite_score</td></tr>";
+		$market_total += $composite_score;
 		array_push($partner_fit, $fit_index);
 	}
 	echo "</table>";
+	$fmarket_total = number_format($market_total, 2);
+	echo "<h3 class = 'w-100' style = 'text-align: right'>Market Total: $fmarket_total</h3>";
 }
 
 function getCompetitionMultiplier($market_name){
